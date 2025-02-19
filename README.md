@@ -1,101 +1,86 @@
-🚀 Web Scraper Multihilo con Selenium y Proxies 🕵️‍♀️
+<h1 align="center"> Web Scraper Multihilo con Selenium y Proxies ️‍♀️</h1>
 
-📌 Descripción
+<p align="center">Automatiza la compra de productos en PCComponentes usando múltiples hilos, Selenium y proxies. ¡Maximiza la velocidad y evita bloqueos!</p>
 
-Este proyecto es un Web Scraper diseñado para automatizar la compra de productos en la web de PCComponentes. Utiliza múltiples hilos, Selenium WebDriver y proxies para maximizar la velocidad y evitar bloqueos por parte del sitio web.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.9-blue?style=for-the-badge&logo=python&logoColor=yellow" alt="Python 3.9">
+  <img src="https://img.shields.io/badge/Selenium-4.10.0-green?style=for-the-badge&logo=selenium&logoColor=white" alt="Selenium 4.10.0">
+  <img src="https://img.shields.io/badge/Telegram-Bot-blue?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Bot">
+</p>
 
-⚡️ Características
+## ⚡️ Características Principales
 
-✅ Uso de Selenium para interacción web automatizada.✅ Gestión automática de cookies y sesiones.✅ Soporte para múltiples ventanas del navegador.✅ Envío de notificaciones a Telegram en tiempo real.✅ Detección automática de cierre de sesión y reintento de login.✅ Sistema de compra automatizada en caso de encontrar stock.
+*   **Multihilo:** Ejecuta múltiples hilos para aumentar la velocidad de scraping.
+*   **Selenium WebDriver:** Automatiza la interacción con la página web.
+*   **Gestión de Proxies:** Evita bloqueos utilizando proxies.
+*   **Notificaciones en Tiempo Real:** Recibe alertas de stock y estado de la compra por Telegram.
+*   **Compra Automática:** Proceso de compra automatizado una vez detectado el stock.
+*   **Gestión de Sesiones:** Detección y reintento automático de inicio de sesión.
+*   **Múltiples Ventanas:** Soporte para múltiples ventanas del navegador.
 
-🏗️ Estructura del Proyecto
+## ⚙️ Estructura del Proyecto
 
-📦 Web Scraper Project
-│
-├── 📄 main.py           # Script principal que ejecuta los bucles del scraper (1 para cada proxy)
-├── 📄 bucle1.py         # Bucle del scraper 1
-├── 📄 scrap1.py         # Configuración del driver y opciones del navegador 1
-├── 📄 bucle2.py         # Bucle del scraper 2
-├── 📄 scrap2.py         # Configuración del driver y opciones del navegador 2
-├── 📄 bucle3.py         # Bucle del scraper 3
-├── 📄 scrap3.py         # Configuración del driver y opciones del navegador 3
-├── 📄 bucle4.py         # Bucle del scraper 4
-├── 📄 scrap4.py         # Configuración del driver y opciones del navegador 4
-├── 📄 bucle5.py         # Bucle del scraper 5
-├── 📄 scrap5.py         # Configuración del driver y opciones del navegador 5
-├── 📄 bucle6.py         # Bucle del scraper 6
-├── 📄 scrap6.py         # Configuración del driver y opciones del navegador 6
-├── 📄 bucle7.py         # Bucle del scraper 7
-├── 📄 scrap7.py         # Configuración del driver y opciones del navegador 7
-├── 📄 bucle8.py         # Bucle del scraper 8
-├── 📄 scrap8.py         # Configuración del driver y opciones del navegador 8
-├── 📄 bucle9.py         # Bucle del scraper 9
-├── 📄 scrap9.py         # Configuración del driver y opciones del navegador 9
-├── 📄 bucle10.py        # Bucle del scraper 10
-├── 📄 scrap10.py        # Configuración del driver y opciones del navegador 10
-├── 📄 enlace.py         # Contiene los enlaces objetivo
-├── 📄 requirements.txt  # Dependencias del proyecto
-├── 📄 README.md         # Este archivo 😎
+## ️ Instalación
 
-🔧 Instalación
+1.  **Clonar el repositorio:**
 
-1️⃣ Clona este repositorio:
+    ```bash
+    git clone [https://github.com/hmonra/Proxy-Scraping.git](https://github.com/hmonra/Proxy-Scraping.git)
+    ```
 
-git clone https://github.com/hmonra/Proxy-Scraping.git
+2.  **Entorno virtual (opcional):**
 
-2️⃣ Crea un entorno virtual (opcional pero recomendado):
+    ```bash
+    python -m venv env
+    source env/bin/activate  # Linux/macOS
+    env\Scripts\activate     # Windows
+    ```
 
-python -m venv env
-source env/bin/activate  # Linux/MacOS
-env\Scripts\activate     # Windows
+3.  **Instalar dependencias:**
 
-3️⃣ Instala las dependencias:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-pip install -r requirements.txt
+4.  **Chromedriver:** Asegúrate de tener Chromedriver en tu PATH o especificado en el código.
 
-4️⃣ Asegúrate de tener el chromedriver en tu PATH o especificado en el código.
+## ▶️ Uso
 
-▶️ Uso
+1.  **Configurar credenciales:** Edita `scrap10.py` con tus credenciales de PCComponentes.
+2.  **Ejecutar el script:**
 
-1️⃣ Configura tus credenciales de PCComponentes en scrap10.py.2️⃣ Ejecuta el script principal:
+    ```bash
+    python main.py
+    ```
 
-python main.py
+3.  **Monitoreo:** El scraper buscará el producto y, si hay stock, intentará la compra automática.
 
-3️⃣ El scraper comenzará a escanear el stock del producto deseado y, en caso de encontrarlo, iniciará el proceso de compra automática.
+##  Notificaciones por Telegram
 
-📲 Notificaciones por Telegram
+*   **Alertas en tiempo real:** Productos encontrados, intentos de compra, problemas de conexión, etc.
+*   **Configuración:** Crea tu propio bot de Telegram y reemplaza `bot_token` y `bot_chatID` en el código.
 
-✅ El bot está configurado para enviarte actualizaciones en tiempo real sobre:
+##  Dependencias
 
-Productos encontrados.
+*   `selenium`
+*   `webdriver-manager`
+*   `pyautogui`
 
-Intentos de compra exitosos o fallidos.
+## ⚠️ Advertencia
 
-Problemas de conexión o cierre de sesión.
+*   Este proyecto es solo para fines educativos.
+*   El scraping puede violar términos de servicio. ¡Úsalo con responsabilidad!
 
-💬 Configura tu propio bot de Telegram y reemplaza el bot_token y bot_chatID en el código.
+##  Contribuciones
 
-📜 Archivo requirements.txt
+¡Contribuciones son bienvenidas! Siéntete libre de hacer un fork y enviar pull requests.
 
-selenium
-webdriver-manager
-pyautogui
+##  Licencia
 
-🚨 Advertencia
+MIT License. Consulta el archivo `LICENSE` para detalles.
 
-⚠️ Este proyecto está diseñado solo con fines educativos. El scraping de sitios web puede violar sus términos de servicio, ¡úsalo con responsabilidad!
+##  Contacto
 
-🤝 Contribuciones
+Desarrollado por [@hmonra](https://github.com/hmonra). ¡No dudes en contactarme con preguntas o sugerencias!
 
-¡Las contribuciones son bienvenidas! Si deseas mejorar este scraper, no dudes en hacer un fork del proyecto y enviar un pull request.
-
-📈 Licencia
-
-Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
-
-📧 Contacto
-
-✨ Desarrollado por @hmonra.📬 Si tienes alguna pregunta o sugerencia, ¡no dudes en contactarme!
-
-🌟 ¡Dale una ⭐ al repo si te ha sido útil!
-
+<p align="center"> ¡Dale una ⭐ al repo si te ha sido útil! </p>
