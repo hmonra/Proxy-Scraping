@@ -1,108 +1,100 @@
-🚀 Multithreaded Web Scraper with Selenium and Proxies 🕵️‍♀️
+<h1 align="center"> Multi-threaded Web Scraper with Selenium and Proxies ️‍♀️</h1>
 
-📌 Description
+<p align="center">Automate product purchases on PCComponentes using multiple threads, Selenium, and proxies. Maximize speed and bypass blocks!</p>
 
-This project is a Web Scraper designed to automate product purchases on the PCComponentes website. It uses multiple threads, Selenium WebDriver, and proxies to maximize speed and avoid being blocked by the website.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.9-blue?style=for-the-badge&logo=python&logoColor=yellow" alt="Python 3.9">
+  <img src="https://img.shields.io/badge/Selenium-4.10.0-green?style=for-the-badge&logo=selenium&logoColor=white" alt="Selenium 4.10.0">
+  <img src="https://img.shields.io/badge/Telegram-Bot-blue?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Bot">
+</p>
 
-⚡️ Features
+## ⚡️ Key Features
 
-✅ Uses Selenium for automated web interaction.
-✅ Automatic management of cookies and sessions.
-✅ Support for multiple browser windows.
-✅ Real-time notifications to Telegram.
-✅ Automatic logout detection and login retry.
-✅ Automated purchase system when stock is found.
+*   **Multi-threading:** Run multiple threads to boost scraping speed.
+*   **Selenium WebDriver:** Automate web page interactions.
+*   **Proxy Management:** Bypass blocks using proxies.
+*   **Real-time Notifications:** Get stock and purchase status alerts via Telegram.
+*   **Automated Purchase:** Streamlined buying process once stock is detected.
+*   **Session Handling:** Automatic login detection and retry.
+*   **Multiple Windows:** Support for multiple browser windows.
 
-🏗️ Project Structure
+## ⚙️ Project Structure
 
-📦 Web Scraper Project
-│
-├── 📄 main.py           # Main script that runs the scraper loops (1 for each proxy)
-├── 📄 bucle1.py         # Scraper loop 1
-├── 📄 scrap1.py         # Driver and browser configuration 1
-├── 📄 bucle2.py         # Scraper loop 2
-├── 📄 scrap2.py         # Driver and browser configuration 2
-├── 📄 bucle3.py         # Scraper loop 3
-├── 📄 scrap3.py         # Driver and browser configuration 3
-├── 📄 bucle4.py         # Scraper loop 4
-├── 📄 scrap4.py         # Driver and browser configuration 4
-├── 📄 bucle5.py         # Scraper loop 5
-├── 📄 scrap5.py         # Driver and browser configuration 5
-├── 📄 bucle6.py         # Scraper loop 6
-├── 📄 scrap6.py         # Driver and browser configuration 6
-├── 📄 bucle7.py         # Scraper loop 7
-├── 📄 scrap7.py         # Driver and browser configuration 7
-├── 📄 bucle8.py         # Scraper loop 8
-├── 📄 scrap8.py         # Driver and browser configuration 8
-├── 📄 bucle9.py         # Scraper loop 9
-├── 📄 scrap9.py         # Driver and browser configuration 9
-├── 📄 bucle10.py        # Scraper loop 10
-├── 📄 scrap10.py        # Driver and browser configuration 10
-├── 📄 enlace.py         # Contains target links
-├── 📄 requirements.txt  # Project dependencies
-├── 📄 README.md         # This file 😎
+Web Scraper Project/
 
-🔧 Installation
+├── main.py        # Main script
 
-1️⃣ Clone this repository:
+├── bucle1.py      # Scraper loop 1
 
-git clone https://github.com/hmonra/Proxy-Scraping.git
+├── scrap1.py      # Driver config 1
 
-2️⃣ Create a virtual environment (optional but recommended):
+├── ...            # Similar files for loops and scrapers 2-10
 
-python -m venv env
-source env/bin/activate  # Linux/MacOS
-env\Scripts\activate     # Windows
+├── enlace.py      # Target links
 
-3️⃣ Install dependencies:
+└── requirements.txt # Dependencies
 
-pip install -r requirements.txt
+## ️ Installation
 
-4️⃣ Make sure you have chromedriver in your PATH or specified in the code.
+1.  **Clone the repository:**
 
-▶️ Usage
+    ```bash
+    git clone [https://github.com/hmonra/Proxy-Scraping.git](https://github.com/hmonra/Proxy-Scraping.git)
+    ```
 
-1️⃣ Configure your PCComponentes credentials in scrap10.py.
-2️⃣ Run the main script:
+2.  **Virtual environment (optional):**
 
-python main.py
+    ```bash
+    python -m venv env
+    source env/bin/activate  # Linux/macOS
+    env\Scripts\activate     # Windows
+    ```
 
-3️⃣ The scraper will start scanning for product stock and, if found, will initiate the automated purchase process.
+3.  **Install dependencies:**
 
-📲 Telegram Notifications
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-✅ The bot is set up to send you real-time updates about:
+4.  **Chromedriver:** Ensure Chromedriver is in your PATH or specified in the code.
 
-Products found.
+## ▶️ Usage
 
-Successful or failed purchase attempts.
+1.  **Configure credentials:** Edit `scrap10.py` with your PCComponentes login details.
+2.  **Run the script:**
 
-Connection problems or logouts.
+    ```bash
+    python main.py
+    ```
 
-💬 Set up your own Telegram bot and replace bot_token and bot_chatID in the code.
+3.  **Monitoring:** The scraper will search for the product and attempt automatic purchase if stock is found.
 
-📜 requirements.txt File
+## Telegram Notifications
 
-selenium
-webdriver-manager
-pyautogui
+*   **Real-time alerts:** Products found, purchase attempts, connection issues, etc.
+*   **Setup:** Create your own Telegram bot and replace `bot_token` and `bot_chatID` in the code.
 
-🚨 Warning
+## Dependencies
 
-⚠️ This project is designed for educational purposes only. Scraping websites may violate their terms of service, use it responsibly!
+*   `selenium`
+*   `webdriver-manager`
+*   `pyautogui`
 
-🤝 Contributions
+## ⚠️ Disclaimer
 
-Contributions are welcome! If you want to improve this scraper, feel free to fork the project and submit a pull request.
+*   This project is for educational purposes only.
+*   Scraping might violate terms of service. Use responsibly!
 
-📈 License
+## Contributions
 
-This project is under the MIT license. See the LICENSE file for more details.
+Contributions are welcome! Feel free to fork and submit pull requests.
 
-📧 Contact
+## License
 
-✨ Developed by @hmonra.
-📬 If you have any questions or suggestions, feel free to contact me!
+MIT License. See the `LICENSE` file for details.
 
-🌟 Give the repo a ⭐ if you found it useful!
+## Contact
 
+Developed by [@hmonra](https://github.com/hmonra). Don't hesitate to reach out with questions or suggestions!
+
+<p align="center"> Give the repo a ⭐ if you found it helpful! </p>
