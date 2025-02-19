@@ -21,12 +21,18 @@
 ## ⚙️ Estructura del Proyecto
 
 Web Scraper Project/
-    main.py        # Script principal
-    bucle1.py      # Bucle del scraper 1
-    scrap1.py      # Configuración del driver 1
-    ...            # Archivos similares para bucles y scrapers 2-10
-    enlace.py      # Enlaces objetivo
-    requirements.txt # Dependencias
+
+├── main.py        # Script principal
+
+├── bucle1.py      # Bucle del scraper 1
+
+├── scrap1.py      # Configuración del driver 1
+
+├── ...            # Archivos similares para bucles y scrapers 2-10
+
+├── enlace.py      # Enlaces objetivo
+
+└── requirements.txt # Dependencias
 
 ## ️ Instalación
 
